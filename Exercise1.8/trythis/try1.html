@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>1.8</title>
+     <style>
+         .shadow
+         {
+             width: 400px;
+             height: auto;
+             box-shadow: 5px 5px 10px gray;
+         }
+         .gallery {
+             display: flex;
+             gap: 10px;
+         }
+         .gallery img {
+             width: 200px;
+             height: auto;
+             transition: transform 0.3s;
+         }
+         .gallery img:hover {
+             transform: scale(1.1);
+         }
+     </style>
+ </head>
+ <body>
+     <h3>Image of my choice</h3>
+     <img src="https://i.ytimg.com/vi/feEMKVcFyC4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCRnp5fFToaizxzl2wu9G78jacEjw">
+     <div class="gallery">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Eo_circle_blue_number-1.svg/2048px-Eo_circle_blue_number-1.svg.png">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS7yMKdE0cs39nY81XhbmaZSyfr_KnyEaCfQ&s">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Eo_circle_blue_number-3.svg/2048px-Eo_circle_blue_number-3.svg.png">
+      </div>
+      <h3>Absolute and Relative Paths</h3>
+     <p>Absolute Path:</p>
+     <img src="c:\Users\Dell\Pictures\Saved Pictures\abs.webp" alt="Absolute Path Image">
+     <p>Relative Path:</p>
+     <img src="../rel.webp" alt="Relative Path Image">
+     
+     <h3>Fallback</h3>
+ </body>
+ </html>
